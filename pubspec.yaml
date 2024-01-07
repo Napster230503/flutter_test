@@ -1,0 +1,13 @@
+name: flutter_test
+description: Belajar Fluter.
+version: 1.0.0
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: 1.1.2  # Contoh dependensi, sesuaikan dengan kebutuhan proyek Anda
+
+# Dan bagian lain dari konfigurasi Anda

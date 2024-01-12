@@ -51,7 +51,24 @@ class HomePage extends StatelessWidget {
             child: ListView(
               children: [
 
+                ListTile(
+                  title: Text('Home'),
+                  onTap: () {
+                    // Pindah ke halaman About Us
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => HomePage()),
+                    );
+                  },
+                  tileColor: const Color.fromARGB(255, 0, 0, 0), // Warna latar belakang saat dipilih
+                  selected: true, // Menandakan bahwa item dipilih
+                  leading: Icon(
+                    Icons.home,
+                    color: Colors.white,
+                  ),
+                ),
 
+                
                 ListTile(
                   title: Text('About Us'),
                   onTap: () {
@@ -61,7 +78,7 @@ class HomePage extends StatelessWidget {
                       MaterialPageRoute(builder: (context) => AboutUsPage()),
                     );
                   },
-                  tileColor: Colors.blue, // Warna latar belakang saat dipilih
+                  tileColor: const Color.fromARGB(255, 0, 0, 0), // Warna latar belakang saat dipilih
                   selected: true, // Menandakan bahwa item dipilih
                   leading: Icon(
                     Icons.info,
@@ -80,7 +97,7 @@ class HomePage extends StatelessWidget {
                     );
                   },
 
-                  tileColor: Colors.grey[700], // Warna latar belakang
+                  tileColor: Color.fromARGB(255, 0, 0, 0), // Warna latar belakang
                   leading: Icon(
                     Icons.mail,
                     color: Colors.white,
